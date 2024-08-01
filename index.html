@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Page</title>
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+	*	{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: permanent-marker, cursive;
+		}
+
+	body{ 	
+			background-image: url('https://www.vecteezy.com/vector-art/18752866-abstract-background-design-background-texture-design-with-abstract-style-creative-illustration-for-advertising-posters-business-cards-flyers-websites-banners-covers-landings-pages-etc');
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color:#4070f4;
+			font-family:permanent-marker, cursive;
+		  }
+
+	form {
+			background-color: steelblue;
+			padding: 10px;
+			border-radius: 50px;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			width: 400px;
+			height: 650px;
+			margin: 20px;
+		}
+
+
+	#heading1 {text-align: center;
+			color: #2c3e50;
+			font-size: 20px;
+			font-weight: bold;
+			margin-bottom: 20px;
+			font-family:permanent-marker, cursive;
+
+	.dob , input [type="text"],[type="email"], [type="password"]{
+			width: 150px;
+			padding: 10px;
+			margin: 5px 0;
+			display: inline-block;
+			border:1px solid #ccc;
+			box-sizing: border-box;
+			border-radius: 5px;
+		}
+
+	.buttons {
+			color: #fff;
+		}
+
+	label {color: antiquewhite;
+			font-size: 16px;
+			color: #333;
+			font-weight: bold;
+		}
+
+
+	input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			cursor: pointer;
+			border-radius: 5px;
+			margin: 8px 0;
+			border: none;
+			padding: 10px 15px;
+		}
+
+	input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+<center>
+	<section id="heading1">
+		<h1>SIGN UP</h1>
+	</section>
+
+	<form>
+		<div id="fname">
+
+			<label>First Name</label>
+			<br>
+			
+			<input type="text" name="fname" placeholder="First name" required />
+		</div>
+		<br>
+
+		<div id="lname">
+			<label>Last Name</label>
+			<br>
+			<input type="text" name="lname"	placeholder="last name" required />
+		</div>
+		<br>
+
+
+		<div class="dob">
+			<label>Date of Birth</label>
+			<br>
+			<input type="Date" name="dob" placeholder="DOB" required />
+		</div>
+		<br>
+
+
+		<div class="email">
+			<label for=email>Email</label>
+			<br>
+			<input type="email" id="email" name="e-mail address" placeholder="email-address"required />
+		</div>
+		<br>
+		<div id="password">
+			<label for="new-password"> New Password</label>
+			<br>
+			<input type="password" id="new-password" name="new-password" required minlength="6" maxlength="12" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}"/>
+			<br>
+			<br>
+			<label for="confirm-password">Confirm Password</label>
+			<br>
+			<input type="password" id="confirm-password" name="confirm-password" required minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}">
+		</div>
+		<br>
+		<div class="radiobuttons">
+			<label>Gender</label>
+			<br>
+			<!-- ask lecturer how to change the color of the last text -->
+			<input type="radio" name="gender" value="male"/> Male
+			<input type="radio" name="gender" value="female"/> Female
+			<input type="radio" name="gender" value="other"/> Other
+			<br>
+			<br>
+			<input type="checkbox" id="agreement" required>
+			<label for="agreement">I agree to the <a href="/table.html" target="_blank"> Terms and Conditions</label>
+		</div>
+		<br>
+		<div class="submit">
+			<input style="width: 90px; height: 40px;" type="Submit" name="submit" value="Submit"/>
+		</div>	
+
+		<input type="radio" id="page"> <label for="page">pAGE 1 0F 1</label>
+
+
+	</form>
+</center>
+</body>
+</html>
